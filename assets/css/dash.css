@@ -1,0 +1,75 @@
+.navbar{
+    border-radius: 0;
+}
+.navbar-inverse {
+    background-color: #0E6C8E;
+    border-color: #0E6C8E;
+}
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+   color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: #34495e;
+}
+.well{
+    margin-top: -20px;
+    background-color: #e3e3e3;
+    border-radius: 0;
+}
+
+.dashboard-welcome{
+    color: #34495e;
+    font-size: 16px;
+}
+
+.dashboard-div{
+    line-height: 30px;
+}
+.dashboard-div h4{
+    font-size: 27px;
+    color: #34495e;
+    padding-bottom: 20px;
+}
+.dashboard-div p{
+    color: #34495e;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.form-error{
+    color:#c0392b;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.crimes_details{
+    color: #34495e;
+    font-weight: 200;
+    font-size: 26px;
+}
+#crimes_single p{
+    font-size: 16px;
+}
+.crimes_details_p{
+    color: #16a085;
+    font-size: 17px;
+}
+
+.btn-success {
+    color: #ffffff;
+    background-color: #16a085;
+    border-color: #4cae4c;
+}
+.crime-title-small{
+    font-size: 14px;
+    color: #31708f;
+}

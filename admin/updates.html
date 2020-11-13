@@ -1,0 +1,18 @@
+<?php
+session_start();
+$user = $_SESSION['username'];
+
+//Redirect if no staff session is set
+if(!isset($user)){
+    header("Location:../admin.php");
+}
+include('../lib/connect.php');
+if(isset($_POST['submit'])){
+    $id = $_POST['title'];
+    $status = $_POST['status'];
+
+    mysql_query("update cases set progress = '$status' where cases_id = '$id'");
+        header('Location:update.php');
+
+}
+

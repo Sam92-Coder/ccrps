@@ -1,0 +1,14 @@
+<?php
+session_start();
+$user = $_SESSION['email'];
+$s = $_GET['s'];
+
+//Redirect if no staff session is set
+if(!isset($user)){
+    header("Location:../login.php");
+}
+include('../lib/connect.php');
+
+mysql_query("DELETE FROM cases WHERE case_title='$s';");
+
+header("Location:reported.php");
